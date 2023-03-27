@@ -1,0 +1,332 @@
+body {
+    margin: 0px;
+
+    .root {
+        margin: 0 auto;
+        padding: 0;
+        width: 1200px;
+        height: auto;
+
+        .header {
+            width: auto;
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto;
+            background-color: gainsboro;
+
+            .logo {
+                font-size: 50px;
+                color: cadetblue;
+                margin-left: 30px;
+            }
+
+            .clock {
+                margin-right: 30px;
+            }
+        }
+
+        .container {
+            width: auto;
+            height: auto;
+            margin: 0 auto;
+            background-color: honeydew;
+            display: flex;
+
+            .firstBlock {
+                width: 400px;
+                border: 1px solid gainsboro;
+                position: relative;
+
+                .headerFirstBlock {
+                    height: 60px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    font-size: 30px;
+                    color: #5696c3b8;
+                    border-bottom: 1px solid gainsboro;
+
+                    .entryField .entryField2 {
+                        height: 40px;
+                        width: 230px;
+                        margin-right: 15px;
+                        border: none;
+                    }
+                }
+
+                .Note_Board {
+                    background-color: bisque;
+                    margin-bottom: 40px;
+
+                    .note {
+                        display: flex;
+                        justify-content: space-between;
+                        border-bottom: 1px solid rgb(183, 113, 181);
+
+                        .compNote {
+                            width: 280px;
+                            display: flex;
+                            flex-direction: column;
+
+                            .title {
+                                height: 40px;
+                                display: flex;
+                                align-items: center;
+                                font-size: 20px;
+                                color: #a96021;
+                                margin: 0;
+                                margin-left: 15px;
+                            }
+
+                            .text {
+                                height: auto;
+                                display: flex;
+                                align-items: center;
+                                font-size: 25px;
+                                font-family: cursive;
+                                color: blue;
+                                margin-left: 10px;
+                            }
+
+                            .dateElement {
+                                height: 40px;
+                                display: flex;
+                                align-items: center;
+                                margin-left: 15px;
+                            }
+                        }
+                    }
+
+                    .divForBtn {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+
+                        #btnTwo {
+                            height: 40px;
+                            width: 30px;
+                            margin-left: auto;
+                            border-color: azure;
+                            background-color: white;
+                        }
+
+                        .button {
+                            background-color: #ffa3b69c;
+                            border-color: #b2222296;
+                        }
+                    }
+                }
+
+                .footerFirstBlock {
+                    width: 100%;
+                    height: 40px;
+                    position: absolute;
+                    bottom: 0;
+
+                    .button {
+                        width: 100%;
+                        height: 100%;
+                        background-color: #f9ff73f7;
+                        border-color: beige;
+                    }
+                }
+            }
+
+            .secondBlock {
+                width: 400px;
+                border: 1px solid gainsboro;
+
+                .headerSecondBlock {
+                    height: 60px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    font-size: 30px;
+                    color: #5696c3b8;
+                    border-bottom: 1px solid gainsboro;
+
+                    .logoInProgress {
+                        margin-left: 15px;
+                    }
+                }
+
+                .boardProgress .note {
+                    background-color: #9d15f952;
+                    border-bottom: 1px solid #b771b5;
+                    justify-content: space-between;
+                    display: flex;
+
+                    .compNote {
+                        width: 280px;
+                        flex-direction: column;
+                        display: flex;
+                    }
+
+                    .title {
+                        height: 40px;
+                        color: #a96021;
+                        align-items: center;
+                        margin: 0 0 0 15px;
+                        font-size: 20px;
+                        display: flex;
+                    }
+
+                    .text {
+                        height: auto;
+                        color: #00f;
+                        align-items: center;
+                        margin-left: 10px;
+                        font-family: cursive;
+                        font-size: 25px;
+                        display: flex;
+                    }
+
+                    .dateElement {
+                        height: 40px;
+                        align-items: center;
+                        margin-left: 15px;
+                        display: flex;
+                    }
+                }
+
+                .divTwo {
+                    width: 100px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+
+                    #btnBack {
+                        width: 85px;
+                        height: 30px;
+                        color: aquamarine;
+                        background-color: darkcyan;
+                    }
+
+                    #btnComplete {
+                        width: 96px;
+                        height: 30px;
+                        text-align: center;
+                        border-color: darkcyan;
+                        background-color: ghostwhite;
+                    }
+                }
+            }
+        }
+
+        .thirdBlock {
+            width: 400px;
+            border: 1px solid gainsboro;
+            position: relative;
+
+            .headerThirdBlock {
+                height: 60px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                font-size: 30px;
+                color: #5696c3b8;
+                border-bottom: 1px solid gainsboro;
+
+                .logoDone {
+                    margin-left: 15px;
+                }
+            }
+
+            .boardDone {
+                margin-bottom: 40px;
+
+                .note {
+                    background-color: #a2fdff;
+                    border-bottom: 1px solid #b771b5;
+                    justify-content: space-between;
+                    display: flex;
+
+                    .compNote {
+                        width: 280px;
+                        flex-direction: column;
+                        display: flex;
+
+                        .title {
+                            height: 40px;
+                            color: #a96021;
+                            align-items: center;
+                            margin: 0 0 0 15px;
+                            font-size: 20px;
+                            display: flex;
+                        }
+
+                        .text {
+                            height: auto;
+                            color: #00f;
+                            align-items: center;
+                            margin-left: 10px;
+                            font-family: cursive;
+                            font-size: 25px;
+                            display: flex;
+                        }
+
+                        .dateElement {
+                            height: 40px;
+                            align-items: center;
+                            margin-left: 15px;
+                            display: flex;
+                        }
+                    }
+                }
+
+                .Del-btn3 {
+                    width: 100px;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    display: flex;
+
+                    .button {
+                        height: 22px;
+                        width: 130px;
+                        background-color: #ff26269c;
+                        border-color: #b2222296;
+                    }
+                }
+            }
+
+            .footerThirdBlock {
+                position: absolute;
+                bottom: 0px;
+                width: 100%;
+                height: 40px;
+
+                .button {
+                    width: 100%;
+                    height: 100%;
+                    background-color: #1fdb3b85;
+                    border-color: beige;
+                }
+            }
+        }
+    }
+
+    .popup {
+        width: 700px;
+        height: 200px;
+        background-color: #ff1616ed;
+        color: white;
+        font-size: 35px;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        position: relative;
+        z-index: 2;
+        margin: -400px auto;
+        padding-top: 20px;
+        border-radius: 40px;
+
+        .P-S {
+            font-size: 18px;
+            color: #ffbfbf;
+        }
+    }
+}
